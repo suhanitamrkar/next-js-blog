@@ -13,7 +13,14 @@ const config: Config = {
         foreground: "var(--foreground)",
       },
     },
+    daisyui: {
+      themes: ["light", "dark", "cupcake"],
+    },
   },
-  plugins: [],
+  plugins: [
+    require('flowbite/plugin'),
+    require('daisyui'),
+
+  ],
 };
 export default config;
